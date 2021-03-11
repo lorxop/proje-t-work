@@ -1,0 +1,74 @@
+.app-menu{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  font-weight: normal;
+  font-family:Impact, fantasy;
+  min-width: 100px;
+  max-width: 6000px;
+}
+.app-menu--logo--img{
+  background-color:black;
+    width: 15%;
+    min-width: 100px;
+    max-width: 6000px;
+}
+ul{
+  list-style: none;
+  justify-content: center;
+  display: flex;
+}
+ul,li,a{
+    padding: 15px 30px;
+    color:#029c2d;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+.app-menu--search{
+  width: 15%;
+  min-width: 150px;
+}
+button{
+  width: 20%;
+  height: 5%;
+  background-color: black;
+  position: relative;
+  top: 15px;
+  left: 10px;
+  box-shadow:0px 0px 10px 0px #029c2d;
+  border-radius: 25px;
+}
+.app-menu--search--img{
+  width: 100%;
+  height: 100%;
+}
+input{
+  border-radius: 25px;
+  position: relative;
+  top: 34px;
+  height: 15%;
+  width: 70%;
+  background-color: #029c2d
+}
+ li a:hover{
+      background: #029c2d;
+      color: black;
+      transition: all 0.5s ease;
+}
+a{
+  font-size: 25px;
+}
+ul{
+  position:fixed;
+  right: 30%;
+  
+}
+.app-menu--search{
+  display: flex;
+  position:fixed;
+  right: 15%;
+
+}
