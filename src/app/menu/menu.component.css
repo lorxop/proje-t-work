@@ -78,7 +78,7 @@ li{
   width: 135px;
 }
 @media (max-width: 900px){
-  .app-menu--list{
+  .app-menu--list {
     display: none;
   }
 }

@@ -1,0 +1,14 @@
+:host {
+  display: block;
+}
+
+.artist {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.artist--img {
+  width: 215px;
+}
