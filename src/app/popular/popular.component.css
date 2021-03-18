@@ -1,0 +1,32 @@
+
+.popular-songs{
+    display: flex;
+}
+
+
+p{
+    font-family:Impact, fantasy;
+    color: #029c2d;
+}
+.top-ur-ru{
+    position: relative;
+    left: 55px;
+}
+hr{
+    position: relative;
+    top: 20px;
+    right: 172px;
+    color: #029c2d;
+    background-color:#029c2d ;
+    height: 3px;
+    width: 270px;
+}
+.name1{
+    position: relative;
+    width: 1000px;
+    top: 30px;
+    right: 440px;
+}
+.songs1{
+   position: relative;
+}
