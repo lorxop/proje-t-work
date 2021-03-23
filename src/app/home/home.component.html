@@ -1,14 +1,7 @@
 <div class="artists">
-<div class="photo-artists">
-  <p><img class="pizz-photo" src="assets/img/pizz.png"></p>
-  <p><img class="maks-photo" src="assets/img/maks.png"></p>
-  <p><img class="morgen-photo" src="assets/img/morgen.png"></p>
-  <p><img class="mot-photo" src="assets/img/mot.png"></p>
-</div>
-<div class="songs">
-  <p> <audio class="pizz-song" src="assets/songs/pizz.mp3" controls></audio></p>
-   <p><audio class="maks-song" src="assets/songs/maks.mp3" controls></audio></p>
-   <p><audio class="morgen-song" src="assets/songs/morgen.mp3" controls></audio></p>
-   <p><audio class="mot-song" src="assets/songs/mot.mp3" controls></audio></p>
-</div>
+  <app-artist *ngFor="let artist of artists"
+              [image]="baseImgPath + artist.image"
+              [audio]="baseAudioPath + artist.audio"
+              >
+  </app-artist>
 </div>

@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { PopularComponent } from './popular/popular.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ArtistComponent } from './artist/artist.component';
 
 const appRoutes: Routes = [
   {path:'', redirectTo: 'home', pathMatch:'full'},
@@ -26,12 +27,13 @@ const appRoutes: Routes = [
     HomeComponent,
     MenuComponent,
     PopularComponent,
-    ProfileComponent
+    ProfileComponent,
+    ArtistComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
