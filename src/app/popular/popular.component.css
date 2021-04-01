@@ -1,32 +1,55 @@
-
-.popular-songs{
-    display: flex;
-}
-
-
-p{
-    font-family:Impact, fantasy;
-    color: #029c2d;
-}
 .top-ur-ru{
     position: relative;
-    left: 55px;
+    bottom: 10px;
+    font-size: 40px;
+    font-weight: normal;
+    font-family:Impact, fantasy;
+    color:#029c2d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-hr{
+.line-ur-ru{
     position: relative;
-    top: 20px;
-    right: 172px;
-    color: #029c2d;
-    background-color:#029c2d ;
-    height: 3px;
-    width: 270px;
+    bottom: 15px;
+    height: 5px;
+    background-color: #029c2d;
+    border: none;
 }
-.name1{
+
+.line-euro{
     position: relative;
-    width: 1000px;
-    top: 30px;
-    right: 440px;
+    bottom: -28px;
+    height: 5px;
+    background-color: #029c2d;
+    border: none;
 }
-.songs1{
-   position: relative;
+.top-euro{
+    position: relative;
+    bottom: -35px;
+    font-size: 40px;
+    font-weight: normal;
+    font-family:Impact, fantasy;
+    color:#029c2d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.line-usa{
+    position: relative;
+    bottom: -80px;
+    height: 5px;
+    background-color: #029c2d;
+    border: none;
+}
+.top-usa{
+    position: relative;
+    bottom: -88px;
+    font-size: 40px;
+    font-weight: normal;
+    font-family:Impact, fantasy;
+    color:#029c2d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

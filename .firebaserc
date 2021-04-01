@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "mu-songs-app"
+  },
+  "targets": {
+    "mu-songs-app": {
+      "hosting": {
+        "my-songs-app": [
+          "mu-songs-app"
+        ]
+      }
+    }
+  }
+}

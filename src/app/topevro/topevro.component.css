@@ -1,0 +1,23 @@
+:host{
+    display: block;
+    font-weight: normal;
+    font-family:Impact, fantasy;
+}
+.artist--title2{
+    position: relative;
+    bottom: -55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 70px;
+    font-size:19px;
+    color:#029c2d;
+}
+.artist--audio2{
+    width: 50%;
+    display: block;
+    position: relative;
+    left: 25%;
+    bottom: 0px;
+
+}

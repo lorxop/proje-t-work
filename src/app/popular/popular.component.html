@@ -1,6 +1,27 @@
-<div class="popular-songs">
-    <p class="top-ur-ru">Топ Украины и России</p>
-    <hr noshade>
-    <p class="name1">Ваня Дмитриенко - Венера-Юпитер</p>
-    <p><audio class="songs1" src="assets/songs/Венера-Юпитер.mp3" controls></audio> </p>
+<h1 class="top-ur-ru">Топ Украины и России</h1>
+<hr class="line-ur-ru">
+
+<div class="popartist">
+  <app-popartist *ngFor="let popartist of popartist"
+              [title]="baseTitlePath + popartist.title"
+              [audio]="baseAudioPath + popartist.audio">
+  </app-popartist>
+</div>
+<hr class="line-euro">
+<h1 class="top-euro">Топ Европы</h1>
+<hr class="line-euro">
+<div class="topevro">
+  <app-topevro *ngFor="let topevro of topevro"
+              [title2]="baseTitlePath + topevro.title2"
+              [audio2]="baseAudioPath + topevro.audio2">
+  </app-topevro>
+</div>
+<hr class="line-usa">
+<h1 class="top-usa">Топ Америки</h1>
+<hr class="line-usa">
+<div class="topusa">
+  <app-topusa *ngFor="let topusa of topusa"
+              [title3]="baseTitlePath + topusa.title3"
+              [audio3]="baseAudioPath + topusa.audio3">
+  </app-topusa>
 </div>

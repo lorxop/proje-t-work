@@ -12,13 +12,11 @@
 .app-menu--logo > a {
   display: inline-block;
 }
-
 .app-menu--logo--img{
   background-color:black;
   width: 100px;
 
 }
-
 .app-menu--list {
   width: 100%;
   position:relative;
@@ -26,13 +24,11 @@
   align-items: center;
   justify-content: center;
 }
-
 ul {
   list-style: none;
   justify-content: center;
   display: flex;
 }
-
 .app-menu--list--item {
     padding: 15px 30px;
     color:#029c2d;
@@ -41,39 +37,14 @@ ul {
     transition: all 0.5s ease;
     font-size: 25px;
 }
-
 li a:hover{
   background: #029c2d;
   color: black;
   transition: all 0.5s ease;
 }
-
-.app-menu--search {
-  display: flex;
-  align-items: center;
-  padding-right: 25px;
-}
 li{
   padding: 15px 30px;
 
-}
-
-.app-menu--search--img{
-  width: 50px;
-}
-
-.app-menu--search--btn {
-  background-color: black;
-  box-shadow:0px 0px 10px 0px #029c2d;
-  border-radius: 25px;
-}
-
-.app-menu--search--input {
-  border-radius: 25px;
-  background-color: #029c2d;
-  height: 25px;
-  margin-right: 10px;
-  width: 135px;
 }
 .menu2{
   display:none;
@@ -85,16 +56,15 @@ li{
   color: transparent;
   position: relative;
   cursor: pointer;
-  top: 5px;
-  right: 10px;
-  z-index: 1;
+  right: 60px;
+  top: 22px;
 }
 .menu2-item{
  display: flex;
  width: 100%;
  height: 3px;
  background-color: #029c2d;
- position: absolute;
+ position: relative;
  top: 0;
  right: 0;
  bottom: 0;
@@ -117,33 +87,50 @@ li{
 .menu2-item::after{
   bottom: -8px;
 }
+.nav{
+  display: none;
+}
 .header{
   position:relative;
   width: 0px;
-  left: -70px;
-  top:-20px;
+  left: -145px;
+  top:0px;
 }
 .nav_link{
-  display: none;
+  display: block;
   padding: 3px 0px;
   color:#029c2d;
   text-decoration: none;
   text-transform: uppercase;
 }
-
-
+.button-ar{
+  position: relative;
+  right: 25%;
+  bottom: -25px;
+  border: 0;
+  background-color: black;
+  color: #029c2d;
+  font-weight: normal;
+  font-family:Impact, fantasy;
+  font-size: 25px;
+}
+.icon-artists{
+  width: 50px;
+  background-color: #029c2d;
+  border-radius: 50%;
+}
 @media (max-width: 1673px){
   .app-menu--list{
-    display: none;
-  }
-  .app-menu--search{
     display: none;
   }
   .menu2{
     display: block;
   }
-  .nav_link.active{
+  .active{
     display: block;
   }
-  
+  .button-ar{
+    position: relative;
+    top: -20px;
+  }
 }

@@ -1,11 +1,11 @@
-<link href="menu.component.js">
+
 <div class="app-menu">
     <div class="app-menu--logo">
       <a routerLink="/">
         <img class="app-menu--logo--img" src="assets/img/11.png">
       </a>
     </div>
-  
+
     <div class="app-menu--list">
       <ul>
         <li><a class="app-menu--list--item" routerLink="home"><i class="fa fa-1"></i>Главное</a></li>
@@ -14,27 +14,62 @@
         <li><a class="app-menu--list--item" routerLink="profile"><i class="fa fa-4"></i>Профиль</a></li>
       </ul>
     </div>
-    <div class="app-menu--search">
-      <input class="app-menu--search--input" type="text" name="search">
-      <button class="app-menu--search--btn">
-        <img class="app-menu--search--img" src="assets/img/111.png">
-      </button>
-    </div>
+
        <div class="menu2_ber">
-    <button class="menu2" id="nav_toggle" type="button" >
+    <button class="menu2" id="nav_toggle" type="button" (click)="toggleMenu($event)" >
       <span class="menu2-item">Menu</span>
     </button>
     <header class="header">
       <div class="container">
-       <nav class="nav">
-        <a class="nav_link" id="nav" href="home">Главное</a>
-        <a class="nav_link" id="nav" href="popular">Популярные</a>
-        <a class="nav_link" id="nav" href="genre">Жанр</a>
-        <a class="nav_link" id="nav" href="profile">Профиль</a>
+       <nav class="nav" #menu>
+        <a class="nav_link"  href="home">Главное</a>
+        <a class="nav_link"  href="popular">Популярные</a>
+        <a class="nav_link"  href="genre">Жанр</a>
+        <a class="nav_link"  href="profile">Профиль</a>
        </nav>
       </div>
      </header>
+     <div class="search">
+      <button class="button-ar" mat-button [matMenuTriggerFor]="animals"><img class="icon-artists" src="assets/img/artists.png"></button>
+ <mat-menu #animals="matMenu">
+   <button mat-menu-item [matMenuTriggerFor]="vertebrates">Артисты</button>
+ </mat-menu>
+ 
+ <mat-menu #vertebrates="matMenu">
+   <button mat-menu-item [matMenuTriggerFor]="rap">Рэп</button>
+   <button mat-menu-item [matMenuTriggerFor]="amphibians">Amphibians</button>
+   <button mat-menu-item [matMenuTriggerFor]="reptiles">Reptiles</button>
+   <button mat-menu-item [matMenuTriggerFor]="birds">Birds</button>
+   <button mat-menu-item>Mammals</button>
+ </mat-menu>
+ <mat-menu #birds="matMenu">
+
+ </mat-menu>
+
+ <mat-menu #rap="matMenu">
+   <button mat-menu-item><a class="link-morgen" routerLink="Morgenshtern">Моргенштерн</a></button>
+   <button mat-menu-item>Bala shark</button>
+   <button mat-menu-item>Ballan wrasse</button>
+   <button mat-menu-item>Bamboo shark</button>
+   <button mat-menu-item>Banded killifish</button>
+ </mat-menu>
+ 
+ <mat-menu #amphibians="matMenu">
+   <button mat-menu-item>Sonoran desert toad</button>
+   <button mat-menu-item>Western toad</button>
+   <button mat-menu-item>Arroyo toad</button>
+   <button mat-menu-item>Yosemite toad</button>
+ </mat-menu>
+ 
+ <mat-menu #reptiles="matMenu">
+   <button mat-menu-item>Banded Day Gecko</button>
+   <button mat-menu-item>Banded Gila Monster</button>
+   <button mat-menu-item>Black Tree Monitor</button>
+   <button mat-menu-item>Blue Spiny Lizard</button>
+   <button mat-menu-item disabled>Velociraptor</button>
+ </mat-menu>
+ </div>
      </div>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-     <script src="menu.component.js"></script>
-  </div>
+     
+  </div> 
+
