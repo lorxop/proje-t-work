@@ -119,6 +119,19 @@ li{
   background-color: #029c2d;
   border-radius: 50%;
 }
+.log-reg{
+  display: block;
+  position: relative;
+  bottom: -10px;
+}
+.login{
+  text-decoration: none;
+  font-size: 15px;
+  color: #029c2d;
+  position: relative;
+  bottom: 25px;
+  left: 35px;
+}
 @media (max-width: 1673px){
   .app-menu--list{
     display: none;

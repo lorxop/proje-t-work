@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { analyzeAndValidateNgModules } from '@angular/compiler';
+import { Component, OnInit, Output } from '@angular/core';
+import * as EventEmitter from 'node:events';
+import { FirebaseService } from '../services/firebase.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+
+  @Output()isLogout = new EventEmitter()
+  constructor(public firebaseService: FirebaseService) { }
 
   ngOnInit(): void {
   }
+ logout(){
+   this.firebaseService.logout()
+   this.isLogout.emit
+ }
 
 }

@@ -1,0 +1,14 @@
+<div class="login" aligh>
+<p class="logi">Login</p>
+<div class="email">
+    <label class="name1">Email</label>
+    <input type="text" #email/>
+</div>
+<div class="pass">
+    <label class="name2">Password</label>
+    <input type="text" #password>
+</div>
+<button (click)="onSignin(email.value,password.value)">Войти</button>
+<a href="registration">Registration</a>
+</div>
+<app-profile *ngIf="isSignedIn" (isLogout)="handleLogout()"></app-profile>

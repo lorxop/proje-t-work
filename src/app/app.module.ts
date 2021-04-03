@@ -26,6 +26,10 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { LoginComponent } from './login/login.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { RegistrationComponent } from './registration/registration.component';
+import { FirebaseService } from './services/firebase.service';
 
 
 const appRoutes: Routes = [
@@ -35,6 +39,8 @@ const appRoutes: Routes = [
   {path: 'genre', component: GenreComponent},
   {path: 'profile', component: ProfileComponent},
   {path: 'Morgenshtern', component: MorgenComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'registration', component: RegistrationComponent},
 ]
 
 @NgModule({
@@ -55,6 +61,8 @@ const appRoutes: Routes = [
     ReggaeComponent,
     MorgenComponent,
     MorgencardComponent,
+    LoginComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserAnimationsModule,
@@ -66,9 +74,10 @@ const appRoutes: Routes = [
     MatCardModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    MatFormFieldModule,
   ],
-  providers: [],
+  providers: [FirebaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,51 @@
+.login{
+    position: relative;
+    bottom: -200px;
+    width: 100px;
+    color: #029c2d;
+    justify-content: space-between;
+    font-weight: normal;
+    font-family:Impact, fantasy;
+    margin: 0 auto;
+    width: 200px;
+}
+.email{
+    font-size: 20px;
+    padding: 20px 0px;
+}
+.name1{
+    position: relative;
+    left: 60px;
+}
+.name2{
+    position: relative;
+    left: 45px;
+}
+.name3{
+    position: relative;
+    left: 20px;
+}
+.logi{
+    position: relative;
+    left: -15px;
+    font-size: 40px;
+}
+.pass{
+    font-size: 20px;
+}
+.enter{
+    width: 100px;
+    height: 20px;
+    position: relative;
+    left: 35px;
+    bottom: -10px;
+    border: none;
+    background-color: #029c2d;
+}
+a{
+    position: relative;
+    left: -50px;
+    bottom: -35px;
+    text-decoration: none;
+    color:#029c2d;
+}

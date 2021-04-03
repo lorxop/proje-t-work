@@ -7,11 +7,8 @@ import { AngularFirestore } from '@angular/fire/firestore';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-songs-app';
-
-  users$ = this.fireStore.collection( path:'home' ).valueChanges();
-
-  constructor(private fireStore: AngularFirestore){
+  title(title: any) {
+    throw new Error('Method not implemented.');
   }
 }
 

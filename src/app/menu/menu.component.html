@@ -4,8 +4,8 @@
       <a routerLink="/">
         <img class="app-menu--logo--img" src="assets/img/11.png">
       </a>
+      <a class="login" href="login">Login</a>
     </div>
-
     <div class="app-menu--list">
       <ul>
         <li><a class="app-menu--list--item" routerLink="home"><i class="fa fa-1"></i>Главное</a></li>
@@ -37,10 +37,9 @@
  
  <mat-menu #vertebrates="matMenu">
    <button mat-menu-item [matMenuTriggerFor]="rap">Рэп</button>
-   <button mat-menu-item [matMenuTriggerFor]="amphibians">Amphibians</button>
-   <button mat-menu-item [matMenuTriggerFor]="reptiles">Reptiles</button>
-   <button mat-menu-item [matMenuTriggerFor]="birds">Birds</button>
-   <button mat-menu-item>Mammals</button>
+   <button mat-menu-item [matMenuTriggerFor]="rock">Рок</button>
+   <button mat-menu-item [matMenuTriggerFor]="dubstep">Дабстеп</button>
+   <button mat-menu-item [matMenuTriggerFor]="birds">----</button>
  </mat-menu>
  <mat-menu #birds="matMenu">
 
@@ -48,25 +47,25 @@
 
  <mat-menu #rap="matMenu">
    <button mat-menu-item><a class="link-morgen" routerLink="Morgenshtern">Моргенштерн</a></button>
-   <button mat-menu-item>Bala shark</button>
-   <button mat-menu-item>Ballan wrasse</button>
-   <button mat-menu-item>Bamboo shark</button>
-   <button mat-menu-item>Banded killifish</button>
+   <button mat-menu-item>Егор Крид</button>
+   <button mat-menu-item>Тимати</button>
+   <button mat-menu-item>Noize MC</button>
+   <button mat-menu-item>Скриптонит</button>
  </mat-menu>
  
- <mat-menu #amphibians="matMenu">
-   <button mat-menu-item>Sonoran desert toad</button>
-   <button mat-menu-item>Western toad</button>
-   <button mat-menu-item>Arroyo toad</button>
-   <button mat-menu-item>Yosemite toad</button>
+ <mat-menu #rock="matMenu">
+   <button mat-menu-item>AC/DC</button>
+   <button mat-menu-item>БИ-2</button>
+   <button mat-menu-item>Цой</button>
+   <button mat-menu-item>Queen</button>
  </mat-menu>
  
- <mat-menu #reptiles="matMenu">
-   <button mat-menu-item>Banded Day Gecko</button>
-   <button mat-menu-item>Banded Gila Monster</button>
-   <button mat-menu-item>Black Tree Monitor</button>
-   <button mat-menu-item>Blue Spiny Lizard</button>
-   <button mat-menu-item disabled>Velociraptor</button>
+ <mat-menu #dubstep="matMenu">
+   <button mat-menu-item>Skrillex</button>
+   <button mat-menu-item>Burial</button>
+   <button mat-menu-item>Nero</button>
+   <button mat-menu-item>James Blake</button>
+   <button mat-menu-item>Flux Pavilion</button>
  </mat-menu>
  </div>
      </div>
