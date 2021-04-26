@@ -1,0 +1,15 @@
+<div class="artists1">
+    <app-favor-art *ngFor="let artist of artists"
+                [image]="baseImgPath + artist.image"
+                [audio]="baseAudioPath + artist.audio"
+                >
+    </app-favor-art>
+  </div>
+
+  <div class="artists">
+    <app-favor-art *ngFor="let artist2 of artists2"
+                [image2]="baseImgPath + artist2.image2"
+                [audio2]="baseAudioPath + artist2.audio2"
+                >
+    </app-favor-art>
+  </div>

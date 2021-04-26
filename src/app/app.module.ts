@@ -30,6 +30,9 @@ import { LoginComponent } from './login/login.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { RegistrationComponent } from './registration/registration.component';
 import { FirebaseService } from './services/firebase.service';
+import { Profile2Component } from './profile2/profile2.component';
+import { FavoritesComponent } from './favorites/favorites.component';
+import { FavorArtComponent } from './favor-art/favor-art.component';
 
 
 const appRoutes: Routes = [
@@ -37,10 +40,11 @@ const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'popular', component: PopularComponent},
   {path: 'genre', component: GenreComponent},
-  {path: 'profile', component: ProfileComponent},
+  {path: 'profile', component: Profile2Component},
   {path: 'Morgenshtern', component: MorgenComponent},
   {path: 'login', component: LoginComponent},
   {path: 'registration', component: RegistrationComponent},
+  {path: 'favorites', component: FavoritesComponent},
 ]
 
 @NgModule({
@@ -63,6 +67,9 @@ const appRoutes: Routes = [
     MorgencardComponent,
     LoginComponent,
     RegistrationComponent,
+    Profile2Component,
+    FavoritesComponent,
+    FavorArtComponent,
   ],
   imports: [
     BrowserAnimationsModule,

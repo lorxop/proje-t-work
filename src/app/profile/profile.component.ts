@@ -1,6 +1,4 @@
-import { analyzeAndValidateNgModules } from '@angular/compiler';
-import { Component, OnInit, Output } from '@angular/core';
-import * as EventEmitter from 'node:events';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FirebaseService } from '../services/firebase.service';
 
 @Component({

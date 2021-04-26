@@ -1,0 +1,19 @@
+:host {
+    display: block;
+  }
+  
+  .artist {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .artist--img {
+    width: 215px;
+    box-shadow: 1px 1px 15px #029c2d, -1px -1px 15px #029c2d;
+    border-radius: 50%;
+  }
+  .artist--audio{
+      width: 500px;
+  }

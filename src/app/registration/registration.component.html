@@ -4,11 +4,11 @@
         <label class="name1">Email</label>
         <input type="text" #emailSignup/>
     </div>
-    <div *ngIf="!isSignedIn" class="pass">
+    <div class="pass">
         <label class="name2">Password</label>
         <input type="text" #passwordSignup/>
     </div>
-    <button (click)="onSignup(emailSignup.value,passwordSignup.value)">Sign up</button>
+    <button class="enter" (click)="onSignup(emailSignup.value, passwordSignup.value)"><a class="logout-pro" href="profile">Sign up</a></button>
     </div>
 
     <app-profile *ngIf="isSignedIn" (isLogout)="handleLogout()"></app-profile>

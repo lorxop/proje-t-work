@@ -8,7 +8,7 @@
     <label class="name2">Password</label>
     <input type="text" #password>
 </div>
-<button (click)="onSignin(email.value,password.value)">Войти</button>
+<button (click)="onSignin(email.value,password.value)"><a class="logout-pro" href="profile">Logout</a></button>
 <a href="registration">Registration</a>
 </div>
 <app-profile *ngIf="isSignedIn" (isLogout)="handleLogout()"></app-profile>

@@ -132,6 +132,7 @@ li{
   bottom: 25px;
   left: 35px;
 }
+
 @media (max-width: 1673px){
   .app-menu--list{
     display: none;

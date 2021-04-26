@@ -1,0 +1,16 @@
+.ava{
+    position: relative;
+    left: 20px;
+    width: 20%;
+    box-shadow: 1px 1px 15px #029c2d, -1px -1px 15px #029c2d;
+    border-radius: 50%;
+}
+.name{
+    position: relative;
+    left: 7%;
+    width: 20%;
+    color: #029c2d;
+    font-weight: normal;
+    font-family:Impact, fantasy;
+    font-size: 200%;
+}
