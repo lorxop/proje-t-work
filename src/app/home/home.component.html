@@ -2,12 +2,8 @@
   <app-artist *ngFor="let artist of artists"
               [image]="baseImgPath + artist.image"
               [audio]="baseAudioPath + artist.audio"
+              (addToFavorites)="addToFavorites(artist)"
               >
   </app-artist>
 </div>
-<div class="icon-like">
-   <button  class="heart"><img class="photo_heart" src="assets/img/heart.png"></button>
-   <button  class="heart"><img class="photo_heart" src="assets/img/heart.png"></button>
-   <button  class="heart"><img class="photo_heart" src="assets/img/heart.png"></button>
-   <button  class="heart"><img class="photo_heart" src="assets/img/heart.png"></button>
-</div>
+

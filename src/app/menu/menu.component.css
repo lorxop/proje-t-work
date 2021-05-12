@@ -4,11 +4,9 @@
   font-weight: normal;
   font-family:Impact, fantasy;
 }
-
 .app-menu--logo {
   width: 100px;
 }
-
 .app-menu--logo > a {
   display: inline-block;
 }
@@ -132,7 +130,6 @@ li{
   bottom: 25px;
   left: 35px;
 }
-
 @media (max-width: 1673px){
   .app-menu--list{
     display: none;

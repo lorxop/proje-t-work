@@ -1,9 +1,5 @@
 <div class="artist">
     <img class="artist--img" [src]="image" alt="">
     <audio class="artist--audio" [src]="audio" controls ></audio>
-  </div>
-
-  <div class="artist">
-    <img class="artist--img" [src]="image2" alt="">
-    <audio class="artist--audio" [src]="audio2" controls ></audio>
+    <button (click)="removeFromFavorites.emit(image)">remove</button>
   </div>

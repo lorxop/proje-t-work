@@ -1,4 +1,7 @@
 <div class="artist">
+  <div class="photo">
     <img class="artist--img" [src]="image" alt="">
+    <img class="photo_heart" src="assets/img/heart.png" (click)="addToFavorites.emit()">
+    </div>
     <audio class="artist--audio" [src]="audio" controls ></audio>
   </div>

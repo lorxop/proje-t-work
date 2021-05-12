@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {FavoritesServices} from '../services/favorites.services';
 
 @Component({
   selector: 'app-home',
@@ -17,4 +17,14 @@ export class HomeComponent {
 
   baseImgPath: string = 'assets/img/';
   baseAudioPath: string = 'assets/songs/';
+  
+  constructor(private favoritesServices: FavoritesServices) {}
+  
+  addToFavorites(artist:any) {
+    
+    console.log(artist);
+
+    this.favoritesServices.addToFavorites(artist);
+  }
+
 }

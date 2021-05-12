@@ -1,4 +1,3 @@
-
 <div class="app-menu">
     <div class="app-menu--logo">
       <a routerLink="/">
@@ -15,7 +14,6 @@
         <li><a class="app-menu--list--item" routerLink="favorites"><i class="fa fa-4"></i>Избраное</a></li>     
       </ul>
     </div>
-
        <div class="menu2_ber">
     <button class="menu2" id="nav_toggle" type="button" (click)="toggleMenu($event)" >
       <span class="menu2-item">Menu</span>
@@ -27,7 +25,7 @@
         <a class="nav_link"  href="popular">Популярные</a>
         <a class="nav_link"  href="genre">Жанр</a>
         <a class="nav_link"  href="profile">Профиль</a>
-        <a class="nav_link"  href="favorites">Избраное</a>
+        <a class="nav_link"  routerLink="favorites">Избраное</a>
        </nav>
       </div>
      </header>
@@ -36,7 +34,6 @@
  <mat-menu #animals="matMenu">
    <button mat-menu-item [matMenuTriggerFor]="vertebrates">Артисты</button>
  </mat-menu>
- 
  <mat-menu #vertebrates="matMenu">
    <button mat-menu-item [matMenuTriggerFor]="rap">Рэп</button>
    <button mat-menu-item [matMenuTriggerFor]="rock">Рок</button>
@@ -44,9 +41,7 @@
    <button mat-menu-item [matMenuTriggerFor]="birds">----</button>
  </mat-menu>
  <mat-menu #birds="matMenu">
-
  </mat-menu>
-
  <mat-menu #rap="matMenu">
    <button mat-menu-item><a class="link-morgen" routerLink="Morgenshtern">Моргенштерн</a></button>
    <button mat-menu-item>Егор Крид</button>
@@ -54,14 +49,12 @@
    <button mat-menu-item>Noize MC</button>
    <button mat-menu-item>Скриптонит</button>
  </mat-menu>
- 
  <mat-menu #rock="matMenu">
    <button mat-menu-item>AC/DC</button>
    <button mat-menu-item>БИ-2</button>
    <button mat-menu-item>Цой</button>
    <button mat-menu-item>Queen</button>
  </mat-menu>
- 
  <mat-menu #dubstep="matMenu">
    <button mat-menu-item>Skrillex</button>
    <button mat-menu-item>Burial</button>
@@ -71,7 +64,5 @@
  </mat-menu>
  </div>
      </div>
-
-     
   </div> 
 

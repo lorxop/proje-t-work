@@ -3,14 +3,12 @@
     height: 100%;
     display: flex;
   }
-
   .app-aside__left,
   .app-aside__right {
     background-color: green;
     width: 15%;
     min-width: 150px;
   }
-
   .app-aside__left {
     background: center / cover no-repeat url("../assets/img/56.png");
   }
@@ -18,20 +16,17 @@
   .app-aside__right {
     background: center / cover no-repeat url("../assets/img/57.png");
   }
-
   .app-container {
     width: 70%;
     background-color: black;
     height: 100vh;
     overflow:auto;
   }
-
   @media screen and (max-width: 646px) {
     .app-aside__left,
     .app-aside__right {
       display: none;
     }
-
     .app-container {
       width: 100%;
     }

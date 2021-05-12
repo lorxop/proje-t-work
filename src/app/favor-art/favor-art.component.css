@@ -17,3 +17,7 @@
   .artist--audio{
       width: 500px;
   }
+  button{
+    border: none;
+    background-color: #029c2d;
+  }

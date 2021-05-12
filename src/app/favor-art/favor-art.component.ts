@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-favor-art',
@@ -13,10 +13,7 @@ export class FavorArtComponent {
   @Input()
   audio: string = '';
 
-  @Input()
-  image2: string = '';
-
-  @Input()
-  audio2: string = '';
+  @Output()
+  removeFromFavorites = new EventEmitter();
 
 }
